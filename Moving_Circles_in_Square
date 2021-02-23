@@ -1,0 +1,31 @@
+var speed = 0.5;
+//Hor_circle_initial_position
+var x = 0;
+//vertical_circle_initial_position
+var yset = 0;
+
+function setup() {
+  createCanvas(400, 400); 
+  background(0)
+}
+
+function draw() {
+  background(50);
+  stroke(250,250,100);
+  strokeWeight(5);
+  noFill();
+  ellipse(x,200,100,100);
+  
+  if(x>width){
+    speed = -0.5;
+  }
+  else if(x<0)
+    {
+      speed = 0.5;
+    }
+  x = x + speed;
+  
+  ellipse(200,yset,100,100)
+  yset = yset + speed;
+  
+}
