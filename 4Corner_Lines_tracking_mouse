@@ -1,0 +1,16 @@
+function setup() {
+  createCanvas(600, 400);
+  background(0)
+}
+
+
+function draw() {
+  if(mouseIsPressed){
+  stroke(mouseX,0,mouseY)
+ line(0,0,mouseX,mouseY)
+  line(600,0,mouseX,mouseY)
+  line(0,400,mouseX,mouseY)
+  line(600,400,mouseX,mouseY)
+  }
+
+}
