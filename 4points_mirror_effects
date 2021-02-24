@@ -1,0 +1,21 @@
+function setup() {
+  createCanvas(600, 400);
+  background(0)
+}
+
+
+function draw() {
+  stroke(mouseX,0,mouseY)
+  strokeWeight(10)
+  if(mouseIsPressed){
+    
+  point(mouseX,mouseY)
+  point(mouseX*-1 + 600, mouseY)
+   point(mouseX, mouseY*-1 + 400)
+    point(mouseX*-1 + 600, mouseY*-1 + 400)
+    
+  
+    
+  }
+
+}
