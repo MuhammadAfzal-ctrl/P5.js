@@ -1,0 +1,137 @@
+
+var speed = 1;
+var newDimensions = 1;
+
+
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+  
+  // Drawing Co-ordinates
+  for (var i = 0; i<height ; i = i+20)
+    {
+      
+      //For making Principle Axis Prominent
+      
+      if(i == 180 )
+        {
+          stroke(0)
+          strokeWeight(3)
+          noFill();
+      line(0,20+i,400,20+i)
+      line(20+i,0,20+i,400)
+        }
+      else
+        
+     // White Lines   
+        stroke(255)
+      line(0,20+i,400,20+i)
+      line(20+i,0,20+i,400)   
+    }
+   
+    stroke(0)
+    strokeWeight(3)
+   noFill();
+    
+  
+  
+  if(newDimensions>height)
+    {
+
+     speed = -1;
+      
+    }
+   if(newDimensions==0)
+    {
+      speed = 1;
+    }
+  
+  
+    newDimensions = newDimensions + speed;
+  
+    
+    ellipse(200,200,newDimensions,newDimensions)
+  
+  
+  
+    line(200,200,newDimensions,newDimensions)
+  
+  
+   
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
